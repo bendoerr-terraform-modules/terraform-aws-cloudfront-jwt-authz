@@ -18,5 +18,5 @@ provider "aws" {
 module "this" {
   source  = "../.."
   context = module.context.shared
-  name    = "example"
+  name    = "simple"
 }

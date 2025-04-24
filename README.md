@@ -1,35 +1,35 @@
 <br/>
 <p align="center">
-  <a href="https://github.com/bendoerr-terraform-modules/terraform-module-repo-template">
+  <a href="https://github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/bendoerr-terraform-modules/terraform-module-repo-template/raw/main/docs/logo-dark.png">
-      <img src="https://github.com/bendoerr-terraform-modules/terraform-module-repo-template/raw/main/docs/logo-light.png" alt="Logo">
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz/raw/main/docs/logo-dark.png">
+      <img src="https://github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz/raw/main/docs/logo-light.png" alt="Logo">
     </picture>
   </a>
 
-<h3 align="center">Ben's Terraform Module Template Repo</h3>
+<h3 align="center">Ben's Terraform AWS Cloudfront JWT Authz</h3>
 
 <p align="center">
     This is how I do it.
     <br/>
     <br/>
-    <a href="https://github.com/bendoerr-terraform-modules/terraform-module-repo-template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/bendoerr-terraform-modules/terraform-module-repo-template/issues">Report Bug</a>
+    <a href="https://github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz/issues">Report Bug</a>
     .
-    <a href="https://github.com/bendoerr-terraform-modules/terraform-module-repo-template/issues">Request Feature</a>
+    <a href="https://github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz/issues">Request Feature</a>
   </p>
 </p>
 
-[<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/bendoerr-terraform-modules/terraform-module-repo-template?logo=github">](https://github.com/bendoerr-terraform-modules/terraform-module-repo-template/graphs/contributors)
-[<img alt="GitHub issues" src="https://img.shields.io/github/issues/bendoerr-terraform-modules/terraform-module-repo-template?logo=github">](https://github.com/bendoerr-terraform-modules/terraform-module-repo-template/issues)
-[<img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/bendoerr-terraform-modules/terraform-module-repo-template?logo=github">](https://github.com/bendoerr-terraform-modules/terraform-module-repo-template/pulls)
-[<img alt="GitHub workflow: Terratest" src="https://img.shields.io/github/actions/workflow/status/bendoerr-terraform-modules/terraform-module-repo-template/test.yml?logo=githubactions&label=terratest">](https://github.com/bendoerr-terraform-modules/terraform-module-repo-template/actions/workflows/test.yml)
-[<img alt="GitHub workflow: Linting" src="https://img.shields.io/github/actions/workflow/status/bendoerr-terraform-modules/terraform-module-repo-template/lint.yml?logo=githubactions&label=linting">](https://github.com/bendoerr-terraform-modules/terraform-module-repo-template/actions/workflows/lint.yml)
-[<img alt="GitHub tag (with filter)" src="https://img.shields.io/github/v/tag/bendoerr-terraform-modules/terraform-module-repo-template?filter=v*&label=latest%20tag&logo=terraform">](https://registry.terraform.io/modules/bendoerr-terraform-modules/cloudfront-with-s3-origin/aws/latest)
-[<img alt="OSSF-Scorecard Score" src="https://img.shields.io/ossf-scorecard/github.com/bendoerr-terraform-modules/terraform-module-repo-template?logo=securityscorecard&label=ossf%20scorecard&link=https%3A%2F%2Fsecurityscorecards.dev%2Fviewer%2F%3Furi%3Dgithub.com%2Fbendoerr-terraform-modules%2Fterraform-module-repo-template">](https://securityscorecards.dev/viewer/?uri=github.com/bendoerr-terraform-modules/terraform-module-repo-template)
-[<img alt="GitHub License" src="https://img.shields.io/github/license/bendoerr-terraform-modules/terraform-module-repo-template?logo=opensourceinitiative">](https://github.com/bendoerr-terraform-modules/terraform-module-repo-template/blob/main/LICENSE.txt)
+[<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz?logo=github">](https://github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz/graphs/contributors)
+[<img alt="GitHub issues" src="https://img.shields.io/github/issues/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz?logo=github">](https://github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz/issues)
+[<img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz?logo=github">](https://github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz/pulls)
+[<img alt="GitHub workflow: Terratest" src="https://img.shields.io/github/actions/workflow/status/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz/test.yml?logo=githubactions&label=terratest">](https://github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz/actions/workflows/test.yml)
+[<img alt="GitHub workflow: Linting" src="https://img.shields.io/github/actions/workflow/status/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz/lint.yml?logo=githubactions&label=linting">](https://github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz/actions/workflows/lint.yml)
+[<img alt="GitHub tag (with filter)" src="https://img.shields.io/github/v/tag/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz?filter=v*&label=latest%20tag&logo=terraform">](https://registry.terraform.io/modules/bendoerr-terraform-modules/cloudfront-with-s3-origin/aws/latest)
+[<img alt="OSSF-Scorecard Score" src="https://img.shields.io/ossf-scorecard/github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz?logo=securityscorecard&label=ossf%20scorecard&link=https%3A%2F%2Fsecurityscorecards.dev%2Fviewer%2F%3Furi%3Dgithub.com%2Fbendoerr-terraform-modules%2Fterraform-aws-cloudfront-jwt-authz">](https://securityscorecards.dev/viewer/?uri=github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz)
+[<img alt="GitHub License" src="https://img.shields.io/github/license/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz?logo=opensourceinitiative">](https://github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz/blob/main/LICENSE.txt)
 
 ## About The Project
 
@@ -68,10 +68,10 @@ TODO
 
 ### Inputs
 
-| Name                                                   | Description                                                                                                   | Type                                                                                                                                                                                                                                                                                                                                                                                                                       | Default   | Required |
-| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | :------: |
-| <a name="input_context"></a> [context](#input_context) | Shared context from the 'bendoerr-terraform-modules/terraform-null-context' module.                           | <pre>object({<br>    attributes     = list(string)<br>    dns_namespace  = string<br>    environment    = string<br>    instance       = string<br>    instance_short = string<br>    namespace      = string<br>    region         = string<br>    region_short   = string<br>    role           = string<br>    role_short     = string<br>    project        = string<br>    tags           = map(string)<br>  })</pre> | n/a       |   yes    |
-| <a name="input_name"></a> [name](#input_name)          | A descriptive but short name used for labels by the 'bendoerr-terraform-modules/terraform-null-label' module. | `string`                                                                                                                                                                                                                                                                                                                                                                                                                   | `"thing"` |    no    |
+| Name                                                   | Description                                                                                                   | Type                                                                                                                                                                                                                                                                                                                      | Default   | Required |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | :------: |
+| <a name="input_context"></a> [context](#input_context) | Shared context from the 'bendoerr-terraform-modules/terraform-null-context' module.                           | <pre>object({<br> attributes = list(string)<br> dns_namespace = string<br> environment = string<br> instance = string<br> instance_short = string<br> namespace = string<br> region = string<br> region_short = string<br> role = string<br> role_short = string<br> project = string<br> tags = map(string)<br> })</pre> | n/a       |   yes    |
+| <a name="input_name"></a> [name](#input_name)          | A descriptive but short name used for labels by the 'bendoerr-terraform-modules/terraform-null-label' module. | `string`                                                                                                                                                                                                                                                                                                                  | `"thing"` |    no    |
 
 ### Outputs
 
@@ -86,21 +86,24 @@ TODO
 
 ## Roadmap
 
-[<img alt="GitHub issues" src="https://img.shields.io/github/issues/bendoerr-terraform-modules/terraform-module-repo-template?logo=github">](https://github.com/bendoerr-terraform-modules/terraform-module-repo-template/issues)
+[<img alt="GitHub issues" src="https://img.shields.io/github/issues/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz?logo=github">](https://github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz/issues)
 
-See the [open issues](https://github.com/bendoerr-terraform-modules/terraform-module-repo-template/issues) for a list of
-proposed features (and known issues).
+See the
+[open issues](https://github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz/issues)
+for a list of proposed features (and known issues).
 
 ## Contributing
 
-[<img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/bendoerr-terraform-modules/terraform-module-repo-template?logo=github">](https://github.com/bendoerr-terraform-modules/terraform-module-repo-template/pulls)
+[<img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz?logo=github">](https://github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz/pulls)
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any
-contributions you make are **greatly appreciated**.
+Contributions are what make the open source community such an amazing place to
+learn, inspire, and create. Any contributions you make are **greatly
+appreciated**.
 
 - If you have suggestions for adding or removing projects, feel free to
-  [open an issue](https://github.com/bendoerr-terraform-modules/terraform-module-repo-template/issues/new) to discuss it,
-  or directly create a pull request after you edit the _README.md_ file with necessary changes.
+  [open an issue](https://github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz/issues/new)
+  to discuss it, or directly create a pull request after you edit the
+  _README.md_ file with necessary changes.
 - Please make sure you check your spelling and grammar.
 - Create individual PR for each suggestion.
 
@@ -114,17 +117,19 @@ contributions you make are **greatly appreciated**.
 
 ## License
 
-[<img alt="GitHub License" src="https://img.shields.io/github/license/bendoerr-terraform-modules/terraform-module-repo-template?logo=opensourceinitiative">](https://github.com/bendoerr-terraform-modules/terraform-module-repo-template/blob/main/LICENSE.txt)
+[<img alt="GitHub License" src="https://img.shields.io/github/license/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz?logo=opensourceinitiative">](https://github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz/blob/main/LICENSE.txt)
 
 Distributed under the MIT License. See
-[LICENSE](https://github.com/bendoerr-terraform-modules/terraform-module-repo-template/blob/main/LICENSE.txt) for more
-information.
+[LICENSE](https://github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz/blob/main/LICENSE.txt)
+for more information.
 
 ## Authors
 
-[<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/bendoerr-terraform-modules/terraform-module-repo-template?logo=github">](https://github.com/bendoerr-terraform-modules/terraform-module-repo-template/graphs/contributors)
+[<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz?logo=github">](https://github.com/bendoerr-terraform-modules/terraform-aws-cloudfront-jwt-authz/graphs/contributors)
 
-- **Benjamin R. Doerr** - _Terraformer_ - [Benjamin R. Doerr](https://github.com/bendoerr/) - _Built Ben's  Terraform Modules_
+- **Benjamin R. Doerr** - _Terraformer_ -
+  [Benjamin R. Doerr](https://github.com/bendoerr/) - _Built Ben's Terraform
+  Modules_
 
 ## Supported Versions
 

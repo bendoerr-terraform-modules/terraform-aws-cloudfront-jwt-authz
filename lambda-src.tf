@@ -2,10 +2,10 @@ resource "null_resource" "build_lambda" {
   provisioner "local-exec" {
     command = <<EOT
       # Check if npm is available
-      if ! command -v npm &> /dev/null; then
-        echo "npm is not installed. Please install Node.js and npm."
-        exit 1
-      fi
+      #if ! command -v npm &> /dev/null; then
+      #  echo "npm is not installed. Please install Node.js and npm."
+      #  exit 1
+      #fi
 
       # Set environment variables and install dependencies
       export JWT_ISSUER=${var.jwt_issuer}

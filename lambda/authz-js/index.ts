@@ -52,6 +52,6 @@ export const handler: CloudFrontRequestHandler = async (
     return request;
   } catch (err) {
     console.error("JWT verification failed:", err);
-    return unauthorized("Invalid or expired token: " + err);
+    return unauthorized(`Invalid or expired token`);
   }
 };

@@ -1,6 +1,12 @@
 resource "null_resource" "build_lambda" {
   provisioner "local-exec" {
     command = <<EOT
+      # Check if npm is available
+      if ! command -v npm &> /dev/null; then
+        echo "npm is not installed. Please install Node.js and npm."
+        exit 1
+      fi
+
       # Set environment variables and install dependencies
       export JWT_ISSUER=${var.jwt_issuer}
       export JWT_AUDIENCE=${var.jwt_audience}
@@ -10,10 +16,18 @@ resource "null_resource" "build_lambda" {
       cd ${path.module}/lambda/authz-js
 
       # Install dependencies
-      npm install
+      npm ci || npm install
+      if [ $? -ne 0 ]; then
+        echo "Failed to install dependencies"
+        exit 1
+      fi
 
       # Run the build script
       npm run build
+      if [ $? -ne 0 ]; then
+        echo "Failed to build Lambda function"
+        exit 1
+      fi
     EOT
   }
 

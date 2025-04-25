@@ -19,6 +19,7 @@ repos:
         args: ["."]
       - id: trivyconfig-docker
         args: ["."]
+
   #  - repo: https://github.com/terraform-docs/terraform-docs
   #    rev: v0.16.0
   #    hooks:

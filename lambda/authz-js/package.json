@@ -1,0 +1,24 @@
+{
+  "name": "authz",
+  "version": "0.0.1-dev",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rm -r dist || true",
+    "build": "node build.js",
+    "postbuild": "cd dist && zip -r index.zip index.*js*"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "description": "",
+  "dependencies": {
+    "aws-jwt-verify": "^5.0.0"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.147",
+    "@types/node": "^22.14.1",
+    "esbuild": "^0.25.2",
+    "typescript": "^5.8.3"
+  }
+}

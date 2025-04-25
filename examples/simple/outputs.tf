@@ -30,7 +30,7 @@ output "lambda_function_arn" {
 
 output "lambda_function_name" {
   description = "Name of the deployed Lambda function"
-  value       = module.this.lambda_function_arn
+  value       = module.this.lambda_function_name
 }
 
 output "lambda_function_version" {

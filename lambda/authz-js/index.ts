@@ -5,9 +5,6 @@ import {
 } from "aws-lambda";
 import { JwtVerifier } from "aws-jwt-verify";
 
-// const JWT_ISSUER = "https://auth.luminsmart.io/"
-// const JWT_AUDIENCE = "https://api.luminsmart.com"
-// const JWT_JWKS_URI = "https://auth.luminsmart.io/.well-known/jwks.json"
 const JWT_ISSUER = process.env.JWT_ISSUER;
 const JWT_AUDIENCE = process.env.JWT_AUDIENCE;
 const JWT_JWKS_URI = process.env.JWT_JWKS_URI;

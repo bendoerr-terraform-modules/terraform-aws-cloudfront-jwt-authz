@@ -46,9 +46,19 @@ export const handler: CloudFrontRequestHandler = async (
 
   try {
     await verifier.verify(token);
+    console.log("JWT verification successful");
     return request;
   } catch (err) {
-    console.error("JWT verification failed:", err);
-    return unauthorized(`Invalid or expired token`);
+    if (err.name) {
+      console.error(`JWT verification failed: ${err.name}`, err);
+      if (err.name === 'TokenExpiredError') {
+        return unauthorized('Token has expired');
+      } else if (err.name === 'JsonWebTokenError') {
+        return unauthorized('Invalid token');
+      }
+    } else {
+      console.error("JWT verification failed:", err);
+    }
+    return unauthorized('Authentication failed');
   }
 };

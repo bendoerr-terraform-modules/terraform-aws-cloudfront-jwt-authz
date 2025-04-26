@@ -59,6 +59,6 @@ export const handler: CloudFrontRequestHandler = async (
     } else {
       console.error("JWT verification failed:", err);
     }
-    return unauthorized('Authentication failed');
+    return unauthorized("Authentication failed");
   }
 };

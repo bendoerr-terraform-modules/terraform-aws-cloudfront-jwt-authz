@@ -6,7 +6,7 @@ require (
 	github.com/aws/aws-sdk-go-v2 v1.42.0
 	github.com/aws/aws-sdk-go-v2/config v1.32.10
 	github.com/aws/aws-sdk-go-v2/service/cognitoidentityprovider v1.59.0
-	github.com/aws/aws-sdk-go-v2/service/lambda v1.88.1
+	github.com/aws/aws-sdk-go-v2/service/lambda v1.92.3
 	github.com/gruntwork-io/terratest v0.56.0
 	github.com/kr/pretty v0.3.1
 	github.com/stretchr/testify v1.11.1

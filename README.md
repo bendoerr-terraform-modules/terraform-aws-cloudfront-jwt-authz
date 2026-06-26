@@ -71,63 +71,63 @@ will find a compatible version automatically.
 
 ### Requirements
 
-| Name                                                                     | Version  |
-| ------------------------------------------------------------------------ | -------- |
+| Name | Version |
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement_terraform) | >= 1.0.0 |
-| <a name="requirement_archive"></a> [archive](#requirement_archive)       | ~> 2.8.0 |
-| <a name="requirement_aws"></a> [aws](#requirement_aws)                   | ~> 6.20  |
-| <a name="requirement_null"></a> [null](#requirement_null)                | ~> 3.3.0 |
+| <a name="requirement_archive"></a> [archive](#requirement_archive) | ~> 2.8.0 |
+| <a name="requirement_aws"></a> [aws](#requirement_aws) | ~> 6.20 |
+| <a name="requirement_null"></a> [null](#requirement_null) | ~> 3.3.0 |
 
 ### Providers
 
-| Name                                                         | Version  |
-| ------------------------------------------------------------ | -------- |
+| Name | Version |
+| ---- | ------- |
 | <a name="provider_archive"></a> [archive](#provider_archive) | ~> 2.8.0 |
-| <a name="provider_aws"></a> [aws](#provider_aws)             | ~> 6.20  |
-| <a name="provider_null"></a> [null](#provider_null)          | ~> 3.3.0 |
+| <a name="provider_aws"></a> [aws](#provider_aws) | ~> 6.20 |
+| <a name="provider_null"></a> [null](#provider_null) | ~> 3.3.0 |
 
 ### Modules
 
-| Name                                                  | Source                                | Version |
-| ----------------------------------------------------- | ------------------------------------- | ------- |
-| <a name="module_label"></a> [label](#module_label)    | bendoerr-terraform-modules/label/null | 1.0.0   |
-| <a name="module_lambda"></a> [lambda](#module_lambda) | bendoerr-terraform-modules/lambda/aws | 0.2.0   |
+| Name | Source | Version |
+| ---- | ------ | ------- |
+| <a name="module_label"></a> [label](#module_label) | bendoerr-terraform-modules/label/null | 1.0.0 |
+| <a name="module_lambda"></a> [lambda](#module_lambda) | bendoerr-terraform-modules/lambda/aws | 0.2.0 |
 
 ### Resources
 
-| Name                                                                                                                                    | Type        |
-| --------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| [aws_lambda_permission.allow_cloudfront](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_permission) | resource    |
-| [null_resource.build_lambda](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource)                     | resource    |
-| [archive_file.lambda_source](https://registry.terraform.io/providers/hashicorp/archive/latest/docs/data-sources/file)                   | data source |
-| [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity)           | data source |
+| Name | Type |
+| ---- | ---- |
+| [aws_lambda_permission.allow_cloudfront](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_permission) | resource |
+| [null_resource.build_lambda](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
+| [archive_file.lambda_source](https://registry.terraform.io/providers/hashicorp/archive/latest/docs/data-sources/file) | data source |
+| [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
 
 ### Inputs
 
-| Name                                                                                                               | Description                                                                                                                                                                                                                     | Type                                                                                                                                                                                                                                                                                                                                   | Default   | Required |
-| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | :------: |
-| <a name="input_cloudfront_distribution_arn"></a> [cloudfront_distribution_arn](#input_cloudfront_distribution_arn) | ARN of the CloudFront distribution that will use this Lambda@Edge function. Used to set appropriate permissions for Lambda function execution. If not provided, it will default to all distributions in the deployment account. | `string`                                                                                                                                                                                                                                                                                                                               | `null`    |    no    |
-| <a name="input_context"></a> [context](#input_context)                                                             | Shared context from the 'bendoerr-terraform-modules/terraform-null-context' module.                                                                                                                                             | <pre>object({<br/> attributes = list(string)<br/> dns_namespace = string<br/> environment = string<br/> instance = string<br/> instance_short = string<br/> namespace = string<br/> region = string<br/> region_short = string<br/> role = string<br/> role_short = string<br/> project = string<br/> tags = map(string)<br/> })</pre> | n/a       |   yes    |
-| <a name="input_jwt_audience"></a> [jwt_audience](#input_jwt_audience)                                              | The audience value for JWT token validation in the Authorization lambda                                                                                                                                                         | `string`                                                                                                                                                                                                                                                                                                                               | n/a       |   yes    |
-| <a name="input_jwt_issuer"></a> [jwt_issuer](#input_jwt_issuer)                                                    | The issuer URI for JWT token validation in the Authorization lambda                                                                                                                                                             | `string`                                                                                                                                                                                                                                                                                                                               | n/a       |   yes    |
-| <a name="input_jwt_jwks_url"></a> [jwt_jwks_url](#input_jwt_jwks_url)                                              | The JWKS URL for retrieving public keys for JWT token validation in the Authorization lambda                                                                                                                                    | `string`                                                                                                                                                                                                                                                                                                                               | n/a       |   yes    |
-| <a name="input_name"></a> [name](#input_name)                                                                      | A descriptive but short name used for labels by the 'bendoerr-terraform-modules/terraform-null-label' module.                                                                                                                   | `string`                                                                                                                                                                                                                                                                                                                               | `"thing"` |    no    |
+| Name | Description | Type | Default | Required |
+| ---- | ----------- | ---- | ------- | :------: |
+| <a name="input_cloudfront_distribution_arn"></a> [cloudfront_distribution_arn](#input_cloudfront_distribution_arn) | ARN of the CloudFront distribution that will use this Lambda@Edge function. Used to set appropriate permissions for Lambda function execution. If not provided, it will default to all distributions in the deployment account. | `string` | `null` | no |
+| <a name="input_context"></a> [context](#input_context) | Shared context from the 'bendoerr-terraform-modules/terraform-null-context' module. | <pre>object({<br/>    attributes     = list(string)<br/>    dns_namespace  = string<br/>    environment    = string<br/>    instance       = string<br/>    instance_short = string<br/>    namespace      = string<br/>    region         = string<br/>    region_short   = string<br/>    role           = string<br/>    role_short     = string<br/>    project        = string<br/>    tags           = map(string)<br/>  })</pre> | n/a | yes |
+| <a name="input_jwt_audience"></a> [jwt_audience](#input_jwt_audience) | The audience value for JWT token validation in the Authorization lambda | `string` | n/a | yes |
+| <a name="input_jwt_issuer"></a> [jwt_issuer](#input_jwt_issuer) | The issuer URI for JWT token validation in the Authorization lambda | `string` | n/a | yes |
+| <a name="input_jwt_jwks_url"></a> [jwt_jwks_url](#input_jwt_jwks_url) | The JWKS URL for retrieving public keys for JWT token validation in the Authorization lambda | `string` | n/a | yes |
+| <a name="input_name"></a> [name](#input_name) | A descriptive but short name used for labels by the 'bendoerr-terraform-modules/terraform-null-label' module. | `string` | `"thing"` | no |
 
 ### Outputs
 
-| Name                                                                                                                                | Description                                                                            |
-| ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| <a name="output_id"></a> [id](#output_id)                                                                                           | The normalized ID from the 'bendoerr-terraform-modules/terraform-null-label' module.   |
-| <a name="output_lambda_cloudwatch_log_group_arn"></a> [lambda_cloudwatch_log_group_arn](#output_lambda_cloudwatch_log_group_arn)    | The ARN of the CloudWatch Log Group for the Lambda function                            |
-| <a name="output_lambda_cloudwatch_log_group_name"></a> [lambda_cloudwatch_log_group_name](#output_lambda_cloudwatch_log_group_name) | The name of the CloudWatch Log Group for the Lambda function                           |
-| <a name="output_lambda_function_arn"></a> [lambda_function_arn](#output_lambda_function_arn)                                        | ARN of the deployed Lambda function                                                    |
-| <a name="output_lambda_function_invoke_arn"></a> [lambda_function_invoke_arn](#output_lambda_function_invoke_arn)                   | The invoke ARN of the Lambda function                                                  |
-| <a name="output_lambda_function_name"></a> [lambda_function_name](#output_lambda_function_name)                                     | Name of the deployed Lambda function                                                   |
-| <a name="output_lambda_function_version"></a> [lambda_function_version](#output_lambda_function_version)                            | The published version of the Lambda function                                           |
-| <a name="output_lambda_iam_role_arn"></a> [lambda_iam_role_arn](#output_lambda_iam_role_arn)                                        | ARN of the IAM role attached to the Lambda function                                    |
-| <a name="output_lambda_layers_arns"></a> [lambda_layers_arns](#output_lambda_layers_arns)                                           | The ARNs of the Lambda layers attached to the function                                 |
-| <a name="output_name"></a> [name](#output_name)                                                                                     | The provided name given to the module.                                                 |
-| <a name="output_tags"></a> [tags](#output_tags)                                                                                     | The normalized tags from the 'bendoerr-terraform-modules/terraform-null-label' module. |
+| Name | Description |
+| ---- | ----------- |
+| <a name="output_id"></a> [id](#output_id) | The normalized ID from the 'bendoerr-terraform-modules/terraform-null-label' module. |
+| <a name="output_lambda_cloudwatch_log_group_arn"></a> [lambda_cloudwatch_log_group_arn](#output_lambda_cloudwatch_log_group_arn) | The ARN of the CloudWatch Log Group for the Lambda function |
+| <a name="output_lambda_cloudwatch_log_group_name"></a> [lambda_cloudwatch_log_group_name](#output_lambda_cloudwatch_log_group_name) | The name of the CloudWatch Log Group for the Lambda function |
+| <a name="output_lambda_function_arn"></a> [lambda_function_arn](#output_lambda_function_arn) | ARN of the deployed Lambda function |
+| <a name="output_lambda_function_invoke_arn"></a> [lambda_function_invoke_arn](#output_lambda_function_invoke_arn) | The invoke ARN of the Lambda function |
+| <a name="output_lambda_function_name"></a> [lambda_function_name](#output_lambda_function_name) | Name of the deployed Lambda function |
+| <a name="output_lambda_function_version"></a> [lambda_function_version](#output_lambda_function_version) | The published version of the Lambda function |
+| <a name="output_lambda_iam_role_arn"></a> [lambda_iam_role_arn](#output_lambda_iam_role_arn) | ARN of the IAM role attached to the Lambda function |
+| <a name="output_lambda_layers_arns"></a> [lambda_layers_arns](#output_lambda_layers_arns) | The ARNs of the Lambda layers attached to the function |
+| <a name="output_name"></a> [name](#output_name) | The provided name given to the module. |
+| <a name="output_tags"></a> [tags](#output_tags) | The normalized tags from the 'bendoerr-terraform-modules/terraform-null-label' module. |
 
 <!-- END_TF_DOCS -->
 

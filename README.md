@@ -48,7 +48,7 @@ ensure predictable behavior across deployments:
 required_providers {
   aws = {
     source  = "hashicorp/aws"
-    version = "~> 6.20" # Allows 6.x, prevents 7.0
+    version = "~> 6.20" # Allows 6.x (>= 6.20), prevents 7.0
   }
 }
 ```

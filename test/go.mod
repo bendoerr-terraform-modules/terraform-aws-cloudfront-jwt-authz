@@ -5,8 +5,8 @@ go 1.26
 require (
 	github.com/aws/aws-sdk-go-v2 v1.42.0
 	github.com/aws/aws-sdk-go-v2/config v1.32.25
-	github.com/aws/aws-sdk-go-v2/service/cognitoidentityprovider v1.61.4
-	github.com/aws/aws-sdk-go-v2/service/lambda v1.92.3
+	github.com/aws/aws-sdk-go-v2/service/cognitoidentityprovider v1.62.0
+	github.com/aws/aws-sdk-go-v2/service/lambda v1.93.0
 	github.com/gruntwork-io/terratest v1.0.0
 	github.com/kr/pretty v0.3.1
 	github.com/stretchr/testify v1.11.1

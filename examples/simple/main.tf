@@ -32,7 +32,7 @@ module "this" {
 
 module "label" {
   source  = "bendoerr-terraform-modules/label/null"
-  version = "1.0.0"
+  version = "1.0.1"
   context = module.context.shared
   name    = "simple-authz"
 }

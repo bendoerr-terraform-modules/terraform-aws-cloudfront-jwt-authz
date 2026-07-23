@@ -1,7 +1,7 @@
 # tfsec:ignore:AVD-AWS-0066 # Lambda@Edge doesn't support tracing
 module "lambda" {
   source  = "bendoerr-terraform-modules/lambda/aws"
-  version = "0.3.0"
+  version = "0.4.0"
   context = var.context
   name    = var.name
 
